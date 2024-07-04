@@ -1,17 +1,40 @@
 :root {
-    --color-blue : #2C7DFA;
-    --color-blue-shade: #3685FF;
-    --color-dark-navy: #1F314F;
-    --color-grey: #7D889E;
-    --color-light-grey: #D5E1EF;
-    --color-white: #FFFFFF;
-    --font-size-15: 0.938rem;
-    --font-size-22: 1.375rem;
+  --color-blue: #2c7dfa;
+  --color-blue-shade: #3685ff;
+  --color-dark-navy: #1f314f;
+  --color-grey: #7d889e;
+  --color-light-grey: #d5e1ef;
+  --color-white: #ffffff;
+  --color-black-shadow: #0d000000;
+  --font-size-15: 0.938rem;
+  --font-size-22: 1.375rem;
+}
+
+body {
+  background-color: var(--color-light-grey);
+  margin: 0;
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--color-white);
+  width: 320px;
+  height: 497px;
+  border-radius: 20px;
+  box-shadow: 0 25px 25px var(--color-black-shadow);
 }
 
 .attribution {
+  position: absolute;
+  bottom: 8px;
   font-size: 11px;
   text-align: center;
+  margin-top: auto;
 }
 
 .attribution a {
